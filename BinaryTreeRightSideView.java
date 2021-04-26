@@ -64,6 +64,18 @@ public class BinaryTreeRightSideView {
       BinaryTreeRightSideDFSHelper(node.left, values, level + 1);
   }
 
+  public static void BinaryTreeRightSDide(TreeNode node, List<Integer> values, int level) {
+    if (values.size() == level) {
+      values.add(node.val);
+    }
+    if (node.right != null) {
+      BinaryTreeRightSDide(node.right, values, level + 1);
+    }
+    if (node.left != null) {
+      BinaryTreeRightSDide(node.left, values, level + 1);
+    }
+  }
+
   public static List<Integer> BinaryTreeRightSideDFS(TreeNode node) {
     List<Integer> results = new ArrayList<>();
     BinaryTreeRightSideDFSHelper(node, results, 0);

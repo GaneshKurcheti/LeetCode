@@ -1,0 +1,3 @@
+var minDiff = function(arr){
+  
+}

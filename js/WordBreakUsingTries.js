@@ -42,6 +42,6 @@ var WordBreak = function(s, wordDict){
     }
   }
   CheckIfCanBeFomed(s, [])
-  return result;
+  console.log( result);
 }
 WordBreak("catsanddog", ["cat","cats","and","sand","dog"])

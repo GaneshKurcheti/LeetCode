@@ -51,4 +51,4 @@ var findAllConcatenatedWordsInADict = function(words) {
   }
   return Array.from(result)
 };
-console.log(findAllConcatenatedWordsInADict(["cat","cats","catsdogcats","dog"]))
+console.log(findAllConcatenatedWordsInADict(["cat","cats","catsdogcats","catsdog","dog"]))

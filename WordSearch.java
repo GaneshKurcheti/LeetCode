@@ -34,7 +34,6 @@ public class WordSearch {
 
   public static void main(String[] args) {
     char[][] wordArr = { { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' } };
-    // char[][] wordArr = { { 'A' } };
     System.out.println(isPresent(wordArr, "A"));
   }
 

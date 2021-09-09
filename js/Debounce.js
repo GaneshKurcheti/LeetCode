@@ -13,7 +13,7 @@ var throttle = function(fn, delay){
   let time;
   return function(...args){
     let now = new Date().getTime()
-    if(now-last < delay){
+    if(time && now-time < delay){
       return;
     }
     time = now;
